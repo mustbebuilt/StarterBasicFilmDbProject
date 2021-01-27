@@ -14,10 +14,6 @@ namespace BasicFilmDbProject.Controllers
 {
     public class HomeController : Controller
     {
-
-        const string SessionName = "_Name";
-        const string SessionAge = "_Age";
-        const string SessionCart = "_Cart";
         private readonly ILogger<HomeController> _logger;
 
         private readonly ApplicationDbContext _context;
