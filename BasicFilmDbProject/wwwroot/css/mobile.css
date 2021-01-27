@@ -1,0 +1,34 @@
+﻿*{
+    box-sizing:border-box;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+header {
+    background-color: #ccc;
+    overflow: auto;
+}
+main{
+    display:flex;
+    flex-direction:column;
+}
+.shoppingCart{
+    
+}
+.msg {
+    background-color: #F2811D;
+    color: #260707;
+    display:inline-block;
+    padding:3px 5px;
+}
+table{
+    border-collapse:collapse;
+}
+th{
+    background-color:#ccc;
+}
+td,th{
+    border:1px solid #ccc;
+}

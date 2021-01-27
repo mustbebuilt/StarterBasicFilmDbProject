@@ -1,0 +1,140 @@
+﻿:root {
+    --button-color: #C9D91E;
+}
+body {
+}
+main{
+    margin:auto;
+    max-width:1200px;
+    flex-direction:row;
+}
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+.innerHeader {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login > p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.login > form > button.delete {
+    margin-top: 0;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    padding:0;
+}
+nav ul li a{
+    display:block;
+    padding:5px;
+    text-decoration:none;
+}
+main{
+    margin-top:25px;
+}
+.shoppingCart {
+    flex: 0 0 25%;
+}
+
+section {
+    flex: 0 0 75%;
+    display: flex;
+
+}
+.wrap{
+    flex-wrap: wrap;
+}
+section > div.filmThumb {
+    padding: 10px;
+    width: calc((100% / 4));
+}
+section > div > h3 > a{
+    font-weight:100;
+    margin:0 0 15px 0;
+    color:#000;
+    text-decoration:none;
+}
+div.filmThumb > div {
+    overflow: hidden;
+}
+div.filmThumb > div > a > img {
+    width: 100%;
+    transform: scale(0.9,0.9);
+    transition: all 0.5s;
+}
+div.filmThumb > div > a > img:hover {
+    transform:scale(1,1);
+}
+.mainImage, .filmInfo {
+    padding:5px;
+}
+.filmInfo {
+    flex:0 0 50%;
+}
+.mainImage > img{
+    width:100%;
+}
+.filmInfo h2{
+    margin-top:0;
+}
+input[type=number] {
+    width: 80px;
+    padding:5px;
+}
+.searchBox{
+    padding:5px;
+    font-size:120%;
+}
+.cta {
+    border-radius: 6px;
+    margin-top: 20px;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--button-color);
+    padding: 10px 25px;
+}
+.fullWidth{
+    flex: 0 0 100%;
+}
+.fullCart th, .fullCart td{
+    padding:5px 8px;
+}
+.cartSummary {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 160px;
+}
+.cartSummary h4{
+    margin-bottom:0;
+}
+.cartSummary p {
+   margin: 0;
+}
+.cartSummary p a {
+        border-radius: 6px;
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 0;
+        background-color: var(--button-color);
+        padding: 10px 25px;
+}
