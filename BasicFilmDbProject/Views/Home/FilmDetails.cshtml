@@ -5,10 +5,6 @@
     ViewData["PageHeading"] = @Model.FilmTitle;
 }
 
-<div class="shoppingCart">
-    @await Component.InvokeAsync("ShoppingCart")
-</div>
-
 <section>
 
     <div class="mainImage">
@@ -20,18 +16,7 @@
         <p>@Model.FilmDescription</p>
         <p>Certificate: @Model.FilmCertificate</p>
         <p>Streaming Price: &pound;@((Model.FilmPrice).ToString("0.00"))</p>
-        <form method="post">
-            <input type="hidden" value="@Model.FilmID" id="FilmID" name="FilmID" />
-            <input type="hidden" value="@Model.FilmTitle" id="FilmTitle" name="FilmTitle" />
-            <input type="hidden" value="@Model.FilmPrice" id="FilmPrice" name="FilmPrice" />
-            <div>
-                <label for="OrderQuantity">Quantity</label>
-                <input type="number" id="OrderQuantity" name="OrderQuantity" min="1" max="10" value="1" />
-            </div>
-            <div>
-                <input type="submit" value="Add To Cart" class="cta" />
-            </div>
-        </form>
+        
     </div>
 
 </section>

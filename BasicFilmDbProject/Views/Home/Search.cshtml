@@ -57,7 +57,7 @@
                     @foreach (var item in Model)
                     {
 <p>@item.FilmTitle (@item.FilmCertificate)</p>
-                        <p><a asp-controller="Home" asp-action="MovieDetails" asp-route-id="@item.FilmID">Details</a></p>} if (Model.Count == 0)
+                        <p><a asp-controller="Home" asp-action="FilmDetails" asp-route-id="@item.FilmID">Details</a></p>} if (Model.Count == 0)
 
                                         {
 
