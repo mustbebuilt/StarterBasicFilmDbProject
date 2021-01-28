@@ -67,7 +67,7 @@ namespace BasicFilmDbProject.Controllers
         }
 
 
-        // note uses id because of routing in startup.cs
+        // note use of the id from the routing pattern in startup.cs
         [HttpGet]
         public IActionResult FilmDetails(int id)
         {
